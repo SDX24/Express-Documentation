@@ -1,4 +1,4 @@
-Example of an admonition/callout with a title:
+<!-- Example of an admonition/callout with a title:
 
 !!! note "Phasellus posuere in sem ut cursus"
 
@@ -11,4 +11,12 @@ Example of an admonition/callout with a title:
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+    massa, nec semper lorem quam in massa. -->
+
+
+
+# How to create references
+
+Intro text: 
+- What to make?
+- 
