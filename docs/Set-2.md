@@ -16,128 +16,62 @@
     </figure>
 
 
-> [**JavaScript**][js] is a programming language used to make web pages interactive. It runs in the browser and on the server (with Node.js), allowing developers to create dynamic websites and applications.
-
-## What You'll Learn :book:
-- How to install and set up Express
-- Creating a basic web server
-- Handling simple routes (GET, POST)
-- Running the app in a browser
-
-## Why use Express
-- Much simpler than alternatives
-- Nicely integrated with [JavaScript][js]
-- Supports hundreds of packages
-- Vast documentation
-
-## Intended users
-This guide is designed for **beginners** who want to learn how to set up and use **Express.js** to build a simple web server. It is ideal for:
-
-* **New Developers** - Those who are just starting with backend development and want an easy-to-follow introduction to Express.
-* **JavaScript Learners** - Developers familiar with JavaScript who want to explore how it works on the server-side.
-* **Frontend Developers** - Those who know HTML, CSS, and JavaScript but want to expand their skill into backend development.
-* **Students & Hobbyists** - Anyone curious about how to create simple [_APIs_][api] and web applications using Express.js
-
-> [**API(Application Programming Interface)**][api] is a way for different applications to communicate with each other. In web development, APIs allow clients (like browsers or mobile apps) to send requests and receive data from a server.
-
-## Prerequisite readings:
-1. **Some** [_Node.js_][node] knowledge (although not required, very much recommended)
-2. **Basic** [_JavaScript_][js] knowledge
-3. **Basic** [_HTML_][html] knowledge
-4. **Very basic** understanding of how [_websites_](https://en.wikipedia.org/wiki/Website) work
+## Difference between GET and POST
 
 
-<!-- Im not sure whether we need to add this *************************************************************** @kamil -->
-<!-- > [**HTML**][html] (HyperText Markup Language) is the foundation of web pages. It structures content using elements like headings, paragraphs, images, and links, making it readable by browsers. -->
+#### GET
+**GET** requests are used to retrieve data from the server. Multiple identical requests should have the same effect as a single request.
+> For example, if you request go to this website from your phone and from your laptop, you will get the same information on the same page and url.
 
-## Software requirements
-
-1. [**Visual Studio Code**][vscode] (VScode)
->You will most definitely need some sort of IDE (**code editing platform**). For this guide specifically, [_Visual Studio Code_][vscode] IDE will be used as it is the most common choice.
-2. [**Node.js**][node]
->If you already have VScode installed, installing Node.js is a simple task. you can follow [this guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-3. Browser
->It is a matter of your choice, whether its [Chrome][chrome], [Firefox][firefox], or [Tor][tor]. You will only need a browser to see how your app looks when launched.
-
-## Express installation
-### Once Node.js is installed, follow these steps to install Express:
-
-**1. Initialize a new Node.js project**
-
-Open your terminal and run: 
-```sh
-npm init -y
-```
-> This creates a `package.json` file, which manages your project dependencies.
-
-**2. Install Express**
-Run the following command to install Express: 
-
-```sh 
-npm install express
-```
-> This will add Express to your project and save it as a dependency.
-
-## Typographical Conventions
-To maintain clarity and consistency throughout this guide, we use the following typographical conventions:
-
-1. <ins>**Code Blocks** - Used for commands, code snippets, and examples.</ins>
-    
-    Ex:
-    ```js
-    console.log("Hello Express");
-    ```
-
-2. <ins>**Inline Code** - Used for small code elements within a sentence.</ins>
-
-    Ex:
-    
-    _Use the `app.get()` method to define a route._
-
-3. <ins>**Bold Text** - Highlights important terms and concepts.</ins>
-    
-    Ex:
-
-    **Middleware** functions help process requests before sending a response.
-
-4. <ins>**Italic Text** - Used for emphasis or to introduce new terms.</ins>
-
-    Ex: 
-
-    _Express is a lightweight framework for Node.js_
+#### POST
+**POST** requests are used to send data to the server to create or update a resource. Multiple identical requests can have *different* effects.
+> For example if you login into your account, and someone else logs into theirs, you both will not get the same profile shown.
 
 
-## Notes and Warning Messages
+## Lets start routing
 !!! tip
+ 
+    Usually its a good idea to handle routes in separate files, depending on the start of the route: 
+    #### server.js
+    ``` js
+    app.use('/', indexRoute)
+    ```
+    #### indexRoute.js
+    ``` js
+    router.get('/', (req, res) => {
+    res.send('Hello, world!');
+    });
+    ```
+    **But for the sake of simplicity we are going to handle the routes in the same server.js file.**
 
-    Declares a best practice method.
-    
-    Example: Using req and res instead of request and response
+#### Get request
+Lets start by creating a GET request to get a simple form to display. Replace your basic route that sends hello world with this code:
     ``` js
     app.get('/', (req, res) => {
-    res.send('hello world')
-    })
+    res.send(`
+    <form action="/submit" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <button type="submit">Submit</button>
+    </form>
+    `);
+    });
     ```
+> Notice how we used ```app.get```?  This is how you tell express whether you want to use GET method or POST.
+
+Now run it (```node server.js```) and go to localhost!
 
 !!! danger
 
-    Declares an error/bug or a code vulnerability
+    If you have auto-save enabled
 
-    Example: You should not use api/security codes in your code, instead put them in an .env file
 
-    ``` js
-    git_api_code = 1234Abc
-    ```
 
-!!! success
 
-    Declares a successful completion/ expected result
 
-    Example: If you have done everything right, you should see <123> in your terminal
 
-    ``` js
-    console.log('123')
-    ```
+
+
 
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
