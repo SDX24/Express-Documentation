@@ -63,8 +63,29 @@ Now run it (```node server.js```) and go to localhost!
 
 !!! danger
 
-    If you have auto-save enabled
+    If you have not stopped hosting the 
+    ```server.js``` file, it will not auto-update.
+    To update stop hosting using control+c
+    #### Windows
+    >Ctrl c
+    #### Mac
+    >^c
 
+    After that run node command again. (```node server.js```)
+
+!!! success
+
+    If you have done everything successfully, you should see the following:
+
+    ![Image title](./assets/set-2-get.png){ width="800" }
+
+#### Post request
+
+Now, start by adding another route. Lets add it right after our get request. Add the following:
+
+``` js
+    code here for post
+```
 
 
 
