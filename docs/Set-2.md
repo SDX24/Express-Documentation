@@ -1,9 +1,9 @@
 
 # Handling simple routes (*GET*, *POST*)
 
-## Welcome to the Basic [Express][express] App guide :rocket:
+## Welcome to routing in [Express][express] :link:
 
-[Express.js][express] is a fast, minimalist web framework for [**Node.js**][node], making it easy to build powerful and scalable web applications. Whether you're new to backend development or just getting started with Express, this guide will walk you through the fundamentals of setting up a basic Express app!
+Routes in Express define the endpoints of your web application. Each route specifies an HTTP method (GET, POST, etc.) that the server responds to. When a request is made to a route, Express executes the associated function to handle the request and send a response. 
 
 > [**Node.js**][node] (or informally Node) is an open-source, cross-platform runtime environment that allows developers to run JavaScript on the server. Node provides an environment to run scripts server-side to produce dynamic web content for the client.
 
