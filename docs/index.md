@@ -56,7 +56,9 @@ This guide is designed for **beginners** who want to learn how to set up and use
 3. **Basic** [_HTML_][html] knowledge
 4. **Very basic** understanding of how [_websites_](https://en.wikipedia.org/wiki/Website) work
 
-> [**HTML**][html] (HyperText Markup Language) is the foundation of web pages. It structures content using elements like headings, paragraphs, images, and links, making it readable by browsers.
+
+<!-- Im not sure whether we need to add this *************************************************************** @kamil -->
+<!-- > [**HTML**][html] (HyperText Markup Language) is the foundation of web pages. It structures content using elements like headings, paragraphs, images, and links, making it readable by browsers. -->
 
 ## Software requirements
 
@@ -119,17 +121,33 @@ To maintain clarity and consistency throughout this guide, we use the following 
 !!! tip
 
     Declares a best practice method.
-
-Example: Using req and res instead of request and respons
-``` js
-app.get('/', (req, res) => {
-  res.send('hello world')
-})
-```
+    
+    Example: Using req and res instead of request and response
+    ``` js
+    app.get('/', (req, res) => {
+    res.send('hello world')
+    })
+    ```
 
 !!! danger
 
-!! success
+    Declares an error/bug or a code vulnerability
+
+    Example: You should not use api/security codes in your code, instead put them in an .env file
+
+    ``` js
+    git_api_code = 1234Abc
+    ```
+
+!!! success
+
+    Declares a successful completion/ expected result
+
+    Example: If you have done everything right, you should see <123> in your terminal
+
+    ``` js
+    console.log('123')
+    ```
 
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
