@@ -1,20 +1,3 @@
-<!-- Example of an admonition/callout with a title:
-
-!!! note "Phasellus posuere in sem ut cursus"
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
-
-
-??? info "Phasellus posuere in sem ut cursus"
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa. -->
-
-
-
 # How to Install and Set Up Express & Creating a Basic Web Server
 
 ## Installing Express.js
@@ -68,7 +51,7 @@ app.get("/", (req, res) => {
 
 // Start the server on port 3000
 app.listen(3000, () => {
-    consoel.log("Server is running on http://localhost:3000");
+    console.log("Server is running on http://localhost:3000");
 });
 ```
 !!! tip

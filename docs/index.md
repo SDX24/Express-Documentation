@@ -32,6 +32,8 @@ I like to drink :beers: after I played :soccer: -->
 - How to install and set up Express
 - Creating a basic web server
 - Handling simple routes (GET, POST)
+- Handling different content types in Express
+- Error handling in Express
 - Running the app in a browser
 
 ## Why use Express
