@@ -3,9 +3,18 @@
 
 ## Welcome to routing in [Express][express] :link:
 
-Routes in Express define the endpoints of your web application. Each route specifies an HTTP method (GET, POST, etc.) that the server responds to. When a request is made to a route, Express executes the associated function to handle the request and send a response. 
+[Routes](https://expressjs.com/en/guide/routing.html) in Express define the endpoints of your web application. Each route specifies an HTTP method (GET, POST, etc.) that the server responds to. When a request is made to a route, Express executes the associated function to handle the request and send a response. 
+!!! example
 
-> [**Node.js**][node] (or informally Node) is an open-source, cross-platform runtime environment that allows developers to run JavaScript on the server. Node provides an environment to run scripts server-side to produce dynamic web content for the client.
+    You do not have to understand the topic in depth to follow the tutorial, but simply this is how it works:
+    > Request and response are the GET/POST methods that we will be assigning. Server is your computer & your code and browser is your browser.
+
+    <figure markdown="span">
+    ![Image title](https://prototype-kit.service.gov.uk/public/docs/v13/images/docs/request-response.svg){ width="900" }
+    <figcaption>Taken from GOV.UK Prototype Kit: [source](https://prototype-kit.service.gov.uk/docs/create-routes)
+    </figcaption>
+    </figure>
+
 
 > [**JavaScript**][js] is a programming language used to make web pages interactive. It runs in the browser and on the server (with Node.js), allowing developers to create dynamic websites and applications.
 
@@ -132,12 +141,4 @@ To maintain clarity and consistency throughout this guide, we use the following 
 
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
-[node]: https://nodejs.org/docs/latest/api/
-[js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-[html]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[vscode]: https://code.visualstudio.com
-[chrome]: https://www.google.com/intl/en_ca/chrome/dr/download/
-[firefox]: https://www.mozilla.org/en-CA/firefox/new/
-[tor]: https://www.torproject.org
-[api]: https://www.postman.com/api-platform/api-documentation/#:~:text=API%20documentation%20is%20a%20set,of%20common%20requests%20and%20responses.
 <!--*****************************************************-->
