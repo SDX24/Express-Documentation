@@ -149,6 +149,20 @@ To maintain clarity and consistency throughout this guide, we use the following 
     console.log('123')
     ```
 
+!!! example
+
+    Declares a non-coding related example
+
+    Example: Describing a folder as a real life folder
+
+    <figure markdown="span">
+    ![Image title](https://images.pexels.com/photos/4792284/pexels-photo-4792284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2){ width="200" }
+    <figcaption>Taken from Pexels: [source](https://www.pexels.com/photo/man-opening-blue-briefcase-with-documents-4792284/)
+    </figcaption>
+    </figure>
+
+
+
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
 [node]: https://nodejs.org/docs/latest/api/
