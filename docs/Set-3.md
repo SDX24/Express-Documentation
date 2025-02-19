@@ -23,6 +23,9 @@ app.listen(3000, () => {
 });
 ```
 
+!!! tip 
+    Always define your static file directory before routes to avoid conflicts.
+
 Now, your CSS, JavaScript, and image files can be accessed directly in the browser.
 
 
@@ -84,3 +87,10 @@ app.use((err, req, res, next) => {
     res.status(500).send("500 - Internal Server Error");
 });
 ```
+!!! danger
+    Never expose sensitive information in error messages.
+
+!!! success 
+    If you followed the steps, your Express app should now be serving HTML, EJS, CSS, and handling errors correctly.
+
+This page provides a foundation for handling different content types and errors in Express.
