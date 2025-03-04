@@ -82,13 +82,65 @@ Now run it (```node server.js```) and go to localhost!
 
 #### Post request
 
-Now, start by adding another route. Lets add it right after our get request. Add the following:
+Now, start by adding another route as well as *middleware* which we need for post to work. Lets add the middleware before our get route and a post route right after our get request. Add the following:
 
 ``` js
-    code here for post
+    // Middleware to parse the body of POST requests
+    app.use(express.urlencoded({ extended: true }));
+
+
+    // YOUR PREVIOUS CODE **********
+    app.get('/', (req, res) => {
+    res.send(`
+    <form action="/submit" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <button type="submit">Submit</button>
+    </form>
+    `);
+    });
+    // *****************************
+
+
+    // Define a POST route to handle form submission
+    app.post('/submit', (req, res) => {
+    const name = req.body.name;
+    res.send(`Hello, ${name}!`);
+});
+
 ```
 
+If you did everything right, you should see something like this:
 
+!!! success
+
+    Of course instead of "John Doe", it will be your name.
+
+    ![Image title](./assets/set-2-post.png){ width="800" }
+
+Thats it, as easy as that!
+
+!!! tip
+
+    Idealy, you do not want to use res.send in a post request. 
+    Because if you go back, refresh and try going to */submit* again, you will get an error.
+
+    > This is because you are not sending a post request, but rather trying to **GET** /submit route. Using res.redirect with another get route would make youre post request stay there
+    
+    Example: Instead of your **POST** request, use:
+    ``` js
+    // Define a POST route to handle form submission
+    app.post('/submit', (req, res) => {
+    const name = req.body.name;
+    res.redirect(`/success?name=${name}`);
+    });
+
+    // Define a GET route to display the success message
+    app.get('/success', (req, res) => {
+    const name = req.query.name;
+    res.send(`Success! Hello, ${name}!`);
+    });
+    ```
 
 
 

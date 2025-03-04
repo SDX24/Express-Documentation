@@ -1,6 +1,9 @@
 const express = require("express"); // Import Express
 const app = express(); // Create an Express app
 
+// Middleware to parse the body of POST requests
+app.use(express.urlencoded({ extended: true }));
+
 // Define a basic route
 app.get('/', (req, res) => {
     res.send(`
@@ -11,6 +14,12 @@ app.get('/', (req, res) => {
     </form>
     `);
     });
+
+// Define a POST route to handle form submission
+app.post('/submit', (req, res) => {
+  const name = req.body.name;
+  res.send(`Hello, ${name}!`);
+});
 
 // Start the server on port 3000
 app.listen(3000, () => {
