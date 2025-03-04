@@ -1,5 +1,6 @@
 site_name: My Docs
 site_url: https://sitename.example
+repo_url: https://github.com/KamilBozz/mkdocs-material-tutorial.git
 theme: 
   name: material
   font: 
@@ -7,8 +8,6 @@ theme:
     code: Red Hat Mono
   # icon: 
   #   logo: fontawesome/solid/k
-  logo: assets/kamil-avatar.png
-  favicon: assets/favicon.ico
   features:
     - navigation.footer
   palette: 
@@ -31,6 +30,15 @@ theme:
           name: Light mode
         primary: blue
         accent: deep orange
+
+nav:
+  - index.md
+  - How to install: Set-1.md
+  - Handling simple routes: Set-2.md
+  - Different content types: Set-3.md
+  - Set-4.md 
+  - Troubleshooting.md
+  - Glossary.md
 
 
 markdown_extensions:
@@ -62,4 +70,4 @@ markdown_extensions:
 #   social:
 #     - icon: simple/linkedin
 
-copyright: Copyright &copy; 2025 Kamil Bozkurt
+copyright: Copyright &copy; 2025 Kamil Bozkurt & Stefan Dorosh

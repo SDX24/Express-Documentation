@@ -10,7 +10,8 @@
     > Request and response are the GET/POST methods that we will be assigning. Server is your computer & your code and browser is your browser.
 
     <figure markdown="span">
-    ![Image title](https://prototype-kit.service.gov.uk/public/docs/v13/images/docs/request-response.svg){ width="900" }
+    ![Image title](https://prototype-kit.service.gov.uk/public/docs/v13/images/docs/request-response.svg#only-light){ width="900" }
+    ![Image title](https://prototype-kit.service.gov.uk/public/docs/v13/images/docs/request-response.svg#only-dark){ width="900" }
     <figcaption>Taken from GOV.UK Prototype Kit: [source](https://prototype-kit.service.gov.uk/docs/create-routes)
     </figcaption>
     </figure>
