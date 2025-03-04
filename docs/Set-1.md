@@ -76,6 +76,8 @@ node server.js
     Server is running on http://localhost:3000
     ```
 Now open your browser and go to **http://localhost:3000**. You should see the text **"Hello, Express!"** displayed on the page. :tada:
+!!! example
+    ![Image title](./assets/Server-running.png){ width="800" }
 
 <br>
 
@@ -83,3 +85,5 @@ Now open your browser and go to **http://localhost:3000**. You should see the te
     If you've followed all the steps correctly, you should see **"Hello, Express!"** in your browser.
 
 This page covers the essential first steps to setting up an Express app.
+!!! example
+    ![Image title](./assets/Hello-express.png){ width="800" }
