@@ -125,7 +125,10 @@ Thats it, as easy as that!
     Idealy, you do not want to use res.send in a post request. 
     Because if you go back, refresh and try going to */submit* again, you will get an error.
 
-    > This is because you are not sending a post request, but rather trying to **GET** /submit route. Using res.redirect with another get route would make youre post request stay there
+    > This is because you are not sending a post request,
+    > but rather trying to **GET** /submit route. 
+    > Using [res.redirect](resRedirect) with another **GET** route
+    > would make your post request stay there
     
     Example: Instead of your **POST** request, use:
     ``` js
@@ -149,4 +152,5 @@ Thats it, as easy as that!
 
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
+[resRedirect]: https://www.geeksforgeeks.org/express-js-res-redirect-function/
 <!--*****************************************************-->
