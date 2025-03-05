@@ -58,10 +58,6 @@ This guide is designed for **beginners** who want to learn how to set up and use
 3. **Basic** [_HTML_][html] knowledge
 4. **Very basic** understanding of how [_websites_](https://en.wikipedia.org/wiki/Website) work
 
-
-<!-- Im not sure whether we need to add this *************************************************************** @kamil -->
-<!-- > [**HTML**][html] (HyperText Markup Language) is the foundation of web pages. It structures content using elements like headings, paragraphs, images, and links, making it readable by browsers. -->
-
 ## Software requirements
 
 1. [**Visual Studio Code**][vscode] (VScode)
