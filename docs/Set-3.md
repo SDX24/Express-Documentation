@@ -49,7 +49,7 @@ Create a `views` folder and an `index.ejs` file inside it:
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Welcome, <%= name %>!</h1>
+    <h1>Welcome, <%= name %>🎉</h1>
 </body>
 </html>
 ```
@@ -60,6 +60,11 @@ app.get("/", (req, res) => {
 })
 ```
 When you visit `http://localhost:3000`, it will display: **Welcome, Express User**   :tada:
+!!! success
+
+    <figure markdown="span">
+    ![Image title](./assets/set-3-welcome.png){ width="600" }
+    </figure>
 
 <br>
 
