@@ -146,11 +146,15 @@ To maintain clarity and consistency throughout this guide, we use the following 
     </figcaption>
     </figure>
 
+!!! note
+
+    Declares a note
+
 
 
 <!-- Links *********************************************-->
 [express]: https://expressjs.com
-[node]: https://nodejs.org/docs/latest/api/
+[node]: https://nodejs.org/docs/latest/api/documentation.html
 [js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [git]: github.com
