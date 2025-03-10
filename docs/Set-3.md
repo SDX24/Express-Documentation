@@ -3,7 +3,10 @@
 ## Serving Different Content Types in Express :art:
 Express allows you to serve various types of content, including **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)**, **[EJS](https://ejs.co/)**, and **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)**. Let's explore how to serve these files efficiently by using Express.
 
-### Serving Static Files (CSS, Images, JS) 
+### Why Do We Need Static Files?
+Static files like CSS, JavaScript, and images make websites look better and work smoothly. CSS adds colors and styles, while JavaScript makes the page interactive. Without them, websites would look plain and not respond to user actions. Express helps serve these files so the website loads correctly and works as expected.
+
+### Serving [Static Files](Glossary.md) (CSS, Images, JS) 
 To serve static file such as CSS, JavaScript, and images, use Express's built-in **[`express.static`](https://expressjs.com/en/starter/static-files.html)** **[middleware](https://expressjs.com/en/guide/using-middleware.html)**.
 
 1. Create a `public` folder inside your project and place your static files (e.g., `styles.css`, `script.js`, `images/`)
@@ -92,6 +95,10 @@ app.use((err, req, res, next) => {
     res.status(500).send("500 - Internal Server Error");
 });
 ```
+!!! note 
+    `err`: This represents the error that occurred in the application. Express passes the error to this function when something goes wrong. <br>
+    `next`: This allows the function to pass the error to the next middleware in the stack if needed, but in this case, we are handling it directly by sending a response.
+
 !!! danger
     Never expose sensitive information in error messages.
 

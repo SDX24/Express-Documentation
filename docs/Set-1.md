@@ -2,7 +2,7 @@
 
 ## Installing Express.js
 
-Before setting up an Express server, you need to install **Node.js** on your system. If you haven't installed it yet, download and install it from [nodejs.org](https://nodejs.org/docs/latest/api/).
+Before setting up an Express server, you need to install **Node.js** on your system. If you haven't installed it yet, download and install it from [nodejs.org](https://nodejs.org/docs/latest/api/documentation.html).
 
 ### Step 1: Initialize a New Node.js Project
 To start, create a new folder for your project and navigate to it in your terminal
