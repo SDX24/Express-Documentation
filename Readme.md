@@ -36,4 +36,7 @@ To help readers, we used:
 ## Conclusion
 Writing this documentation helped us understand Express better and create a helpful resource for others. We hope this documentation makes it easy for you to start using Express and solve any issues you run into.
 
+# Documentation link
+  [Express Beginner guide](https://kamilbozz.github.io/Express-Documentation)
+
 This documentation was created using Material for MkDocs.
