@@ -27,24 +27,9 @@
 **POST** requests are used to send data to the server to create or update a resource. Multiple identical requests can have *different* effects.
 > For example if you login into your account, and someone else logs into theirs, you both will not get the same profile shown.
 
-
 ## Lets start routing
-!!! tip
- 
-    Usually its a good idea to handle routes in separate files, depending on the start of the route: 
-    #### server.js
-    ``` js
-    app.use('/', indexRoute)
-    ```
-    #### indexRoute.js
-    ``` js
-    router.get('/', (req, res) => {
-    res.send('Hello, world!');
-    });
-    ```
-    **But for the sake of simplicity we are going to handle the routes in the same server.js file.**
 
-#### Get request
+#### GET request
 Lets start by creating a GET request to get a simple form to display. Replace your basic route that sends hello world with this code:
     ``` js
     app.get('/', (req, res) => {
@@ -79,9 +64,12 @@ Now run it (```node server.js```) and go to localhost!
 
     ![Image title](./assets/set-2-get.png){ width="800" }
 
-#### Post request
+#### POST request
 
-Now, start by adding another route as well as *middleware* which we need for post to work. Lets add the middleware before our get route and a post route right after our get request. Add the following:
+Now, start by adding another route as well as [*middleware*](Glossary.md#middleware) which we need for POST to work. The middleware is basically a supporting function that the request or repsonse would go through before reaching its final destination.
+Lets add the middleware before our GET route and a POST route right after our GET request. 
+> The middleware in this case is to allow us to use the information that the user inputs to be take out of body of the request and used. 
+Add the following:
 
 ``` js
     // Middleware to parse the body of POST requests
@@ -121,13 +109,13 @@ Thats it, as easy as that!
 
 !!! tip
 
-    Idealy, you do not want to use res.send in a post request. 
+    Idealy, you do not want to use res.send in a POST request. 
     Because if you go back, refresh and try going to */submit* again, you will get an error.
 
-    > This is because you are not sending a post request,
+    > This is because you are not sending a POST request,
     > but rather trying to **GET** /submit route. 
     > Using [res.redirect](resRedirect) with another **GET** route
-    > would make your post request stay there
+    > would make your POST request stay there
     
     Example: Instead of your **POST** request, use:
     ``` js
