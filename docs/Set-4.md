@@ -1,19 +1,20 @@
-# Hosting your app
+# [Hosting](Glossary.md) your Express app
 
 ## Why is this important 💫
 Before you go forward and explore Express on your own, it is important to know one last thing: how to [host](https://www.hostinger.com/tutorials/what-is-web-hosting) your app.
+Although [hosting](Glossary.md) is not a requirement to use Express for your needs, if you ever will try to expand your website past your local machine (your computer), hosting will be unavoidable.
 
 > Hosting is basically making your app run independant of your computer (on a separate, *dedicated* server)
 
 ## Services  :wheel:
-### To host your app:
+### To host your Express app:
 
-1. You can use a **paid** service, here are some examples:
+* You can use a **paid** service, here are some examples:
     - [Heroku](www.heroku.com/)
     - [AWS](aws.amazon.com/) (Amazon Web Services)
     - [DigitalOcean](www.digitalocean.com/)
 
-2. You can use some **free** services, like:
+* You can use some **free** services, like:
     - [Render](render)
     - [Vercel](https://vercel.com)
     - [GitHub Pages](https://pages.github.com) (for *static* sites)
@@ -45,7 +46,11 @@ Create a new file if you are starting from scratch, or replace your "*server.js*
 
 ```
 #### .env
-As you can see, we will be using a Node.Js package called [dotenv](https://www.npmjs.com/package/dotenv). You will need to install it:
+As you can see, we will be using a Node.Js package called [dotenv](https://www.npmjs.com/package/dotenv). 
+> Dotenv is a package that allows us to pass variables without changing the code. For example, in Render there will be an option to put env files. They will then be refered to in our code. You will see how it works in Step 4.
+>Another reason we are using it is due to GitHub. It warns the user that leaving your passwords or API codes and other sorts of keys is a danger. We want to start building a habit of using env variables so that we do not encouter any problems later on your Express journey.
+
+You will need to install it:
 
 ``` js
 npm install dotenv
@@ -70,31 +75,32 @@ At this point, your working folder should look something like this:
     ![Image title](./assets/set-4-folder.png){ width="600" }
     </figure>
 
-Add a `.gitignore` file to the same folder put `node_modules` inside of it. This will prevent hundreds of modules you installed from going into your *[git](git) repository*
+Add a `.gitignore` file to the same folder put `node_modules` inside of it.
+> This will prevent hundreds of modules you installed from going into your *[git](git) repository*. Because of how Node works, node_modules is a very large file. When someone else want to use your code, they will only need to run `npm i` to get the modules, so there is no need for node_modules to be uploaded.
 
 Now, create a new repository (it can be private or public, but preferably private).
 If you are not sure how to do this, check [this guide](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository) out!
 
 ### Step 4: Upload to [Render](render)
-* Last step needed. Go on render and select "create new web service"
+1. Last step needed. Go on render and select "create new web service"
     <figure markdown="span">
     ![Image title](./assets/set-4-newservice.png){ width="600" }
     </figure>
 
-* From the dropdown, select your git repository
+2. From the dropdown, select your git repository
     <figure markdown="span">
     ![Image title](./assets/set-4-selectrepo.png){ width="600" }
     </figure>
 
-* Update build and start commands to use `npm` and `node *server.js*`
+3. Update build and start commands to use `npm i` and `node *server.js*`
     <figure markdown="span">
     ![Image title](./assets/set-4-node.png){ width="600" }
     </figure>
 
-* Select instance type **Free** :dollar:
+4. Select instance type **Free** :dollar:
 
 
-* In Environment Variables section, type `HOSTED` and a value `yes`
+5. In Environment Variables section, type `HOSTED` and a value `yes`
     <figure markdown="span">
     ![Image title](./assets/set-4-env.png){ width="600" }
     </figure>
@@ -103,9 +109,9 @@ If you are not sure how to do this, check [this guide](https://docs.github.com/e
 
     HOSTED should be capitalised as that is what we have put in dotenv. dotenv is **case sensitive**
 
-* Click deploy
+6. Click deploy
 
-* Open your render website
+7. Open your render website
     <figure markdown="span">
     ![Image title](./assets/set-4-link.png){ width="600" }
     </figure>

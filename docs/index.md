@@ -27,6 +27,7 @@
 - Handling different content types in Express
 - Error handling in Express
 - Running the app in a browser
+- [Hosting](Glossary.md) your app
 
 ## Why use Express
 - Much simpler than alternatives

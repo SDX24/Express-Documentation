@@ -12,6 +12,7 @@
 | Status Codes    | Status codes are numbers in HTTP responses that indicate whether a request was successful or not. |
 | Error Handling    | Error handling is the process of catching and responding to errors in an Express app. A common way to handle errors is using middleware.
 | Server    | A computer program or device that provides a service to another computer program and its user, also known as the client |
+| Hosting | Hosting is the process of making your web application accessible on the internet by running it on a server. This can be done using a variety of free or paid services, each with its pros and cons. |
 | Environment Variables | Environment variables are used to configure settings for different environments (e.g., development, production). They can be set in a `.env` file and loaded using the `dotenv` package. |
 | Deployment | Deployment is the process of making an application available for use on a server. This can involve uploading code to a hosting service like Render, Heroku, or AWS. |
 | Node.js | Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server side. |
