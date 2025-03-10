@@ -18,7 +18,7 @@
 4. **Basic** [_HTML_][html] knowledge
 > The text will be given, but it is very much recomended to understand why it is being used.
 5. **Some** [_GitHub_][git] understanding.
-> Understanding how to create a repository. This will only be needed for hosting and a guide will be attached.
+> Understanding how to create a repository. This will only be needed for hosting and a [guide][gitGuide] will be attached.
 
 ## What You'll Learn :book:
 - How to install and set up Express
@@ -154,6 +154,7 @@ To maintain clarity and consistency throughout this guide, we use the following 
 [js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [git]: github.com
+[gitGuide]: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
 [vscode]: https://code.visualstudio.com
 [chrome]: https://www.google.com/intl/en_ca/chrome/dr/download/
 [firefox]: https://www.mozilla.org/en-CA/firefox/new/

@@ -69,6 +69,7 @@ Now run it (```node server.js```) and go to localhost!
 Now, start by adding another route as well as [*middleware*](Glossary.md) which we need for POST to work. The middleware is basically a supporting function that the request or repsonse would go through before reaching its final destination.
 Lets add the middleware before our GET route and a POST route right after our GET request. 
 > The middleware in this case is to allow us to use the information that the user inputs to be take out of body of the request and used. 
+
 Add the following:
 
 ``` js
@@ -114,7 +115,7 @@ Thats it, as easy as that!
 
     > This is because you are not sending a POST request,
     > but rather trying to **GET** /submit route. 
-    > Using [res.redirect](resRedirect) with another **GET** route
+    > Using [res.redirect][resRedirect] with another **GET** route
     > would make your POST request stay there
     
     Example: Instead of your **POST** request, use:
