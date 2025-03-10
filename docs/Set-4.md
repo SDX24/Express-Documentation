@@ -122,6 +122,6 @@ If you are not sure how to do this, check [this guide](https://docs.github.com/e
 # Congratulations on setting up your first Express.js App! :stars: :stars: :stars:
 
 <!-- Links *********************************************-->
-[rednder]: https://render.com
+[render]: https://render.com
 [git]: github.com
 <!--*****************************************************-->

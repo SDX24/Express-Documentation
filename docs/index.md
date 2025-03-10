@@ -8,6 +8,18 @@
 
 > [**JavaScript**][js] is a programming language used to make web pages interactive. It runs in the browser and on the server (with Node.js), allowing developers to create dynamic websites and applications.
 
+## Prerequisite readings:
+1. **Very basic** CLI(Command Line Interface) understanding.
+> Basically, knowing where the CLI is located and being able to access it.
+2. **Some** [_Node.js_][node] knowledge.
+> The commands will be given, but it is very much recomended to understand why they are being used.
+3. **Basic** [_JavaScript_][js] knowledge
+> The commands will be given, but it is very much recomended to understand why they are being used.
+4. **Basic** [_HTML_][html] knowledge
+> The text will be given, but it is very much recomended to understand why it is being used.
+5. **Some** [_GitHub_][git] understanding.
+> Understanding how to create a repository. This will only be needed for hosting and a guide will be attached.
+
 ## What You'll Learn :book:
 - How to install and set up Express
 - Creating a basic web server
@@ -31,12 +43,6 @@ This guide is designed for **beginners** who want to learn how to set up and use
 * **Students & Hobbyists** - Anyone curious about how to create simple [_APIs_][api] and web applications using Express.js
 
 > [**API(Application Programming Interface)**][api] is a way for different applications to communicate with each other. In web development, APIs allow clients (like browsers or mobile apps) to send requests and receive data from a server.
-
-## Prerequisite readings:
-1. **Some** [_Node.js_][node] knowledge (although not required, very much recommended)
-2. **Basic** [_JavaScript_][js] knowledge
-3. **Basic** [_HTML_][html] knowledge
-4. **Very basic** understanding of how [_websites_](https://en.wikipedia.org/wiki/Website) work
 
 ## Software requirements
 
@@ -146,6 +152,7 @@ To maintain clarity and consistency throughout this guide, we use the following 
 [node]: https://nodejs.org/docs/latest/api/
 [js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[git]: github.com
 [vscode]: https://code.visualstudio.com
 [chrome]: https://www.google.com/intl/en_ca/chrome/dr/download/
 [firefox]: https://www.mozilla.org/en-CA/firefox/new/
