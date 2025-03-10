@@ -35,7 +35,7 @@ Now, your CSS, JavaScript, and image files can be accessed directly in the brows
 <br>
 
 ## Using EJS for Dynamic Content
-**[EJS (Embedded JavaScript)](https://ejs.co/)** allows you to render dynamic HTML pages, First, install EJS by using your console:
+**[EJS (Embedded JavaScript)](https://ejs.co/)** is a template engine that lets you insert dynamic content into HTML. Instead of writing multiple HTML files for different pages, EJS allows you to reuse a single template and pass data to it. This makes your web app more flexible and efficient.<br> First, install EJS by using your console:
 ```sh 
 npm install ejs
 ```
