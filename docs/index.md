@@ -9,7 +9,7 @@
 > [**JavaScript**][js] is a programming language used to make web pages interactive. It runs in the browser and on the server (with Node.js), allowing developers to create dynamic websites and applications.
 
 ## Prerequisite readings:
-1. **Very basic** CLI(Command Line Interface) understanding.
+1. **Very basic** CLI (Command Line Interface) understanding.
 > Basically, knowing where the CLI is located and being able to access it.
 2. **Some** [_Node.js_][node] knowledge.
 > The commands will be given, but it is very much recomended to understand why they are being used.
